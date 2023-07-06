@@ -1,0 +1,25 @@
+import { Container } from '../Layout/Container/Container.jsx';
+import { Category } from './Category/Category.jsx';
+import { Contacts } from './Contacts/Contacts.jsx';
+import { Copyright } from './Copyright/Copyright.jsx';
+import { Development } from './Development/Development.jsx';
+import style from './Footer.module.scss';
+import { Social } from './Social/Social.jsx';
+
+
+export const Footer = () => {
+
+  return(
+    <footer>
+      <Container className={style.container}>
+        <Category style={style} />
+        <Social style={style} />
+        <Contacts style={style} />
+        <Copyright style={style} />
+        <Development style={style} />
+      </Container>
+    </footer>
+  )
+}       
+
+
