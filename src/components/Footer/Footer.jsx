@@ -1,18 +1,18 @@
 import { Container } from '../Layout/Container/Container.jsx';
 import { Category } from './Category/Category.jsx';
+import { Social } from './Social/Social.jsx';
 import { Contacts } from './Contacts/Contacts.jsx';
 import { Copyright } from './Copyright/Copyright.jsx';
 import { Development } from './Development/Development.jsx';
 import style from './Footer.module.scss';
-import { Social } from './Social/Social.jsx';
 
 
-export const Footer = () => {
+export const Footer = ({ list }) => {
 
   return(
     <footer>
       <Container className={style.container}>
-        <Category style={style} />
+        <Category style={style} list={list}/>
         <Social style={style} />
         <Contacts style={style} />
         <Copyright style={style} />
@@ -20,6 +20,4 @@ export const Footer = () => {
       </Container>
     </footer>
   )
-}       
-
-
+};
