@@ -5,8 +5,8 @@ import style from './Container.module.scss';
 export const Container = (props) => {
 
   return(
-    <div className={cn(style.container, props.className)}>
+    <div className={cn(style.container, props?.className)}>
       {props.children}
     </div>
   )
-}
+};
