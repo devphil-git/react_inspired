@@ -8,7 +8,6 @@ import { fetchNavigation } from "./features/navigationSlice.js";
 import { fetchColor } from "./features/colorSlice.js";
 
 
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Root />}>
