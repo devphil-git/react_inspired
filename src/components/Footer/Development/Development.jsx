@@ -1,8 +1,4 @@
-
-
-
 export const Development = ({ style }) => {
-
 
   return(
     <div className={style.development}>
@@ -16,6 +12,4 @@ export const Development = ({ style }) => {
       </ul>
     </div>
   )
-}
-
-
+};

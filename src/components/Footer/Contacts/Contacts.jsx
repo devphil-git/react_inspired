@@ -1,7 +1,4 @@
-
-
 export const Contacts = ({ style }) => {
-
 
   return(
     <div className={style.contacts}>

@@ -8,7 +8,7 @@ export const Root = () => {
 
   return(
     <>
-      <Header/>
+      <Header />
       <Main>
         <Outlet />
       </Main>
