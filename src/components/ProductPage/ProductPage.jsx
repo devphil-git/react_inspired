@@ -7,11 +7,11 @@ import { API_URL } from '../../const.js';
 import cn from 'classnames';
 import style from './ProductPage.module.scss';
 import { ColorList } from '../ColorList/ColorList.jsx';
-import { ReactComponent as Like } from '../../assets/heart.svg';
 import { Count } from '../Count/Count';
 import { ProductSize } from './ProductSize/ProductSize';
 import { Goods } from '../Goods/Goods';
 import { fetchCategory } from '../../features/goodsSlice';
+import { BtnLike } from '../BtnLike/BtnLike';
 
 
 export const ProductPage = () => {
@@ -77,8 +77,7 @@ export const ProductPage = () => {
                 handleDecrement={handleDecrement} 
               />
               <button className={style.addCart} type='submit'>В корзину</button>
-              <button className={style.flavorite} aria-label='Добавить в избранное' type='button'></button>
-              <Like />
+              <BtnLike id={id} />
             </div>
           </form>
         </Container>
