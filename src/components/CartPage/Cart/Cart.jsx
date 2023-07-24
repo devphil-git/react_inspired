@@ -27,7 +27,7 @@ export const Cart = ({ cartItems, goodsList }) => {
                 </li>
               ))}
             </ul>
-          : <p className=''>В корзине пусто</p>
+          : <p className={styles.empty}>В корзине пусто</p>
         }
 
         <div className={styles.total}>
