@@ -9,6 +9,7 @@ import { fetchColor } from "./features/colorSlice.js";
 import { ProductPage } from "./components/ProductPage/ProductPage.jsx";
 import { CartPage } from "./components/CartPage/CartPage.jsx";
 import { FavoritePage } from "./components/FavoritePage/FavoritePage.jsx";
+import { SearchPage } from "./components/SearchPage/SearchPage.jsx";
 
 
 const router = createBrowserRouter(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<Root />}>
       <Route index element={<MainPage />} />
       <Route path='/cart' element={<CartPage />} />
+      <Route path='/search' element={<SearchPage />} />
       <Route path='/favorites' element={<FavoritePage />} />
       <Route path='catalog/:gender/:category?' element={<MainPage />} />
       <Route path='product/:id' element={<ProductPage />} />
